@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Menos intenso */
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease; /* Transição suave no hover */
+}
+
+.profile-container:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Efeito de hover */
+}
+
+.profile-container img {
+    width: 120px; /* Tamanho mais apropriado */
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.profile-container .bio {
+    max-width: 400px;
+    margin-left: 20px; /* Adiciona espaçamento ao redor da bio */
+}
+
+.profile-container .bio h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.profile-container .bio p {
+    margin: 0 0 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+.profile-container .bio a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transição suave para a cor do link */
+}
+
+.profile-container .bio a:hover {
+    color: #0056b3; /* Cor de hover mais escura */
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-container img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
